@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Assignment8"
+             xmlns:models="clr-namespace:Assignment8.Models"
+             x:Class="Assignment8.MainPage" x:DataType="local:MainPage"
+             BackgroundColor="#f9f9f9">
+
+    <VerticalStackLayout         
+        Padding="30,0"
+        Spacing="25">
+
+        <Label Text="User Information" FontAttributes="Bold" FontSize="Medium"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="First Name" FontAttributes="Bold"/>
+            <Label Grid.Row="1" Text="Surname" FontAttributes="Bold"/>
+            <Label Grid.Row="2" Text="Email" FontAttributes="Bold"/>
+            <Label Grid.Row="3" Text="Bio" FontAttributes="Bold"/>
+
+            <Entry Grid.Column="1"  Text="{Binding CurrentUser.Name }"/>
+            <Entry Grid.Row="1" Grid.Column="1" Text="{Binding CurrentUser.Surname }"/>
+            <Entry Grid.Row="2" Grid.Column="1" Text="{Binding CurrentUser.Email }"/>
+            <Entry Grid.Row="3" Grid.Column="1" Text="{Binding CurrentUser.Bio }"/>
+
+        </Grid>
+
+        <Button Text="Reload Data" BackgroundColor="Black" SemanticProperties.Hint="Counts the number of times you click" Clicked="ReloadButton_Clicked" HorizontalOptions="Fill" />
+
+        <Button Text="Save" BackgroundColor="Black" Clicked="SaveButton_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
