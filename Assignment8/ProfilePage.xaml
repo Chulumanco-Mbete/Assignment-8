@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Assignment8"
              xmlns:models="clr-namespace:Assignment8.Models"
-             x:Class="Assignment8.MainPage" x:DataType="local:MainPage"
+             x:Class="Assignment8.ProfilePage" x:DataType="local:ProfilePage"
              BackgroundColor="#f9f9f9">
 
     <VerticalStackLayout         
@@ -11,6 +11,8 @@
         Spacing="25">
 
         <Label Text="User Information" FontAttributes="Bold" FontSize="Medium"/>
+
+        <Image Source="profile.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"/>
 
         <Grid>
             <Grid.RowDefinitions>

@@ -1,10 +1,9 @@
 ﻿using Assignment8.Models;
 using Assignment8.Services;
-using System.Collections.ObjectModel;
 
 namespace Assignment8
 {
-    public partial class MainPage : ContentPage
+    public partial class ProfilePage : ContentPage
     {
         private LocalDatabase _database;
 
@@ -21,7 +20,7 @@ namespace Assignment8
             }
         }
 
-        public MainPage()
+        public ProfilePage()
         {
             InitializeComponent();
 
