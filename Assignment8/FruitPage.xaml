@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Assignment8"
-             xmlns:models="clr-namespace:Assignment8.Models"
-             x:Class="Assignment8.FruitPage" 
-             x:DataType="local:FruitPage">
+             xmlns:local="clr-namespace:Assignment8.Models"
+             x:Class="Assignment8.FruitPage">
     
     <ScrollView>
         <Grid RowDefinitions="auto,*" Padding="0,10,0,0" Background="#292B2D">
@@ -28,17 +26,17 @@
                                BackgroundColor="White"
                                VerticalOptions="CenterAndExpand">
                                     <Image 
-                                   Source="{Binding CurrentFruit.Image}" 
+                                   Source="{Binding FruitImage}" 
                                    Aspect="AspectFit"
                                    WidthRequest="100"/>
                                 </Frame>
 
                                 <StackLayout Grid.RowSpan="2" Grid.Column="1" VerticalOptions="Center">
-                                    <Label Text="{Binding CurrentFruit.Name}"
+                                    <Label Text="{Binding FruitName}"
                                        Padding="10,0,0,10"
                                        FontSize="17"
                                        FontAttributes="Bold"/>
-                                    <Label  Text="{Binding CurrentFruit.Price}"
+                                    <Label  Text="{Binding FruitPrice, StringFormat='{0:C}'}"
                                         Padding="10,0,0,0"
                                         FontAttributes="Bold"
                                         FontSize="20"
@@ -46,7 +44,7 @@
                                 </StackLayout>
                                 <Grid Grid.Column="3" VerticalOptions="Center">
                                     <Button  FontSize="13"
-                                     Margin="0,0,10,0"
+                                     Margin="0,0,-100,0"
                                      BackgroundColor="#2C363C"
                                      Text="View Details"
                                      Command="{Binding Source={x:Reference listView},Path=BindingContext.ProductClick}"

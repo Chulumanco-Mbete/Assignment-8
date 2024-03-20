@@ -25,38 +25,38 @@ namespace Assignment8.Models
             {
                 new ButcheryItems
                 {
-                    Name = "Lamb",
-                    Image = "",
-                    Description = "",
-                    Price = 119.99,
-                    Quantity = 50
+                    MeatName = "Lamb",
+                    MeatImage = "lamb.png",
+                    MeatDescription = "",
+                    MeatPrice = 119.99,
+                    MeatQuantity = 50
                 },
 
                 new ButcheryItems
                 {
-                    Name = "Pork",
-                    Image = "",
-                    Description = "",
-                    Price = 89.99,
-                    Quantity = 50
+                    MeatName = "Pork",
+                    MeatImage = "pork.png",
+                    MeatDescription = "",
+                    MeatPrice = 89.99,
+                    MeatQuantity = 50
                 },
 
                 new ButcheryItems
                 {
-                    Name = "Chicken",
-                    Image = "",
-                    Description = "",
-                    Price = 59.99,
-                    Quantity = 50
+                    MeatName = "Chicken",
+                    MeatImage = "chicken.png",
+                    MeatDescription = "",
+                    MeatPrice = 59.99,
+                    MeatQuantity = 50
                 },
 
                 new ButcheryItems
                 {
-                    Name = "Sausage",
-                    Image = "",
-                    Description = "",
-                    Price = 49.99,
-                    Quantity = 50
+                    MeatName = "Sausage",
+                    MeatImage = "sausage.png",
+                    MeatDescription = "",
+                    MeatPrice = 49.99,
+                    MeatQuantity = 50
                 },
             };
 

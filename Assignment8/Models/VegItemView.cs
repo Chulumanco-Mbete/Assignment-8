@@ -20,94 +20,94 @@ namespace Assignment8.Models
             {
                 new VegItems
                 {
-                    Name = "Tomatoes",
-                    Image = "tomatoe.png",
-                    Description = "",
-                    Price = 34.99,
-                    Quantity = 50
+                    VegName = "Tomatoes",
+                    VegImage = "tomatoe.png",
+                    VegDescription = "",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
                 },
 
                 new VegItems
                 {
-                    Name = "Potatoes",
-                    Image = "potatoe.png",
-                    Description = "",
-                    Price = 34.99,
-                    Quantity = 50
+                    VegName = "Potatoes",
+                    VegImage = "potatoe.png",
+                    VegDescription = "",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
                 },
 
                 new VegItems
                 {
-                    Name = "Broccoli",
-                    Image = "broccoli.png",
-                    Description = "",
-                    Price = 29.99,
-                    Quantity = 50
+                    VegName = "Broccoli",
+                    VegImage = "broccoli.png",
+                    VegDescription = "",
+                    VegPrice = 29.99,
+                    VegQuantity = 50
                 },
 
                 new VegItems
                 {
-                    Name = "Cauliflower",
-                    Image = "cauliflower.png",
-                    Description = "",
-                    Price = 29.99,
-                    Quantity = 50
+                    VegName = "Cauliflower",
+                    VegImage = "cauliflower.png",
+                    VegDescription = "",
+                    VegPrice = 29.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Cabbage",
-                    Image = "cabbage.png",
-                    Description = "",
-                    Price = 28.99,
-                    Quantity = 50
+                    VegName = "Cabbage",
+                    VegImage = "cabbage.png",
+                    VegDescription = "",
+                    VegPrice = 28.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Carrots",
-                    Image = "carrots.png",
-                    Description = "",
-                    Price = 23.99,
-                    Quantity = 50
+                    VegName = "Carrots",
+                    VegImage = "carrots.png",
+                    VegDescription = "",
+                    VegPrice = 23.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Cucumber",
-                    Image = "banana.png",
-                    Description = "",
-                    Price = 14.99,
-                    Quantity = 50
+                    VegName = "Cucumber",
+                    VegImage = "cucumber.png",
+                    VegDescription = "",
+                    VegPrice = 14.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Lettuce",
-                    Image = "lettuce.png",
-                    Description = "",
-                    Price = 24.99,
-                    Quantity = 50
+                    VegName = "Lettuce",
+                    VegImage = "lettuce.png",
+                    VegDescription = "",
+                    VegPrice = 24.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Onion",
-                    Image = "onion.png",
-                    Description = "",
-                    Price = 34.99,
-                    Quantity = 50
+                    VegName = "Onion",
+                    VegImage = "onion.png",
+                    VegDescription = "",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Red Onion",
-                    Image = "red_onion.png",
-                    Description = "",
-                    Price = 34.99,
-                    Quantity = 50
+                    VegName = "Red Onion",
+                    VegImage = "red_onion.png",
+                    VegDescription = "",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
                 },
                 new VegItems
                 {
-                    Name = "Spinach",
-                    Image = "spinach.png",
-                    Description = "",
-                    Price = 39.99,
-                    Quantity = 50
+                    VegName = "Spinach",
+                    VegImage = "spinach.png",
+                    VegDescription = "",
+                    VegPrice = 39.99,
+                    VegQuantity = 50
                 },
             };
 

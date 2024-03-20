@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Assignment8"
-             xmlns:models="clr-namespace:Assignment8.Models"
-             x:Class="Assignment8.FruitDetailsPage" x:DataType="local:FruitDetailsPage">
+             x:Class="Assignment8.FruitDetailsPage">
     
     <ScrollView>
         <Grid RowDefinitions="350,300,150,55" RowSpacing="0" BindingContext="{Binding SelectedProduct}">
@@ -12,7 +10,7 @@
                 <Grid>
                     <BoxView CornerRadius="0,0,0,0" Color="#2C363C" HeightRequest="350"/>
                     <Grid ColumnDefinitions="*,Auto" HeightRequest="300" HorizontalOptions="FillAndExpand">
-                        <Image Grid.Column="0" Margin="10,20,10,20" Source="{Binding CurrentFruit.Image}" HeightRequest="330" Aspect="AspectFit"/>
+                        <Image Grid.Column="0" Margin="10,20,10,20" Source="{Binding FruitImage}" HeightRequest="330" Aspect="AspectFit"/>
                     </Grid>
                 </Grid>
             </StackLayout>
@@ -21,9 +19,9 @@
                 <Grid>
                     <BoxView CornerRadius="0,0,0,0" Color="White" HeightRequest="300"/>
                     <Grid RowDefinitions="Auto,Auto,Auto,Auto" Padding="20,45,20,0" >
-                        <Label Grid.Row="1"  FontSize="30" FontAttributes="Bold" Text="{Binding CurrentFruit.Name}"/>
-                        <Label Grid.Row="2" Text="{Binding CurrentFruit.Price}" FontSize="25" Padding="0,15" TextColor="#2C363C" FontAttributes="Bold"/>
-                        <Label Grid.Row="3" Text="{Binding CurrentFruit.Description}" FontSize="20" TextColor="Black"/>
+                        <Label Grid.Row="1"  FontSize="30" FontAttributes="Bold" Text="{Binding FruitName}"/>
+                        <Label Grid.Row="2" Text="{Binding FruitPrice}" FontSize="25" Padding="0,15" TextColor="#2C363C" FontAttributes="Bold"/>
+                        <Label Grid.Row="3" Text="{Binding FruitDescription}" FontSize="20" TextColor="Black"/>
                     </Grid>
                 </Grid>
             </StackLayout>

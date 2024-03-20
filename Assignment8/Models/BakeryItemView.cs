@@ -20,38 +20,38 @@ namespace Assignment8.Models
             {
                 new BakeryItems
                 {
-                    Name = "White Bread",
-                    Image = "",
-                    Description = "",
-                    Price = 15.99,
-                    Quantity = 50
+                    BakeName = "White Bread",
+                    BakeImage = "white_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 15.99,
+                    BakeQuantity = 50
                 },
 
                 new BakeryItems
                 {
-                    Name = "Brown Bread",
-                    Image = "",
-                    Description = "",
-                    Price = 17.99,
-                    Quantity = 50
+                    BakeName = "Brown Bread",
+                    BakeImage = "brown_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 17.99,
+                    BakeQuantity = 50
                 },
 
                 new BakeryItems
                 {
-                    Name = "Paninis",
-                    Image = "",
-                    Description = "",
-                    Price = 12.99,
-                    Quantity = 50
+                    BakeName = "Paninis",
+                    BakeImage = "panini.png",
+                    BakeDescription = "",
+                    BakePrice = 12.99,
+                    BakeQuantity = 50
                 },
 
                 new BakeryItems
                 {
-                    Name = "Garlic Bread",
-                    Image = "",
-                    Description = "",
-                    Price = 13.99,
-                    Quantity = 50
+                    BakeName = "Garlic Bread",
+                    BakeImage = "garlic_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 13.99,
+                    BakeQuantity = 50
                 },
             };
 

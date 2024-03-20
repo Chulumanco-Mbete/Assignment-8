@@ -26,6 +26,8 @@ namespace Assignment8.Services
             //_dbConnection.CreateTable<VegItems>();
             //_dbConnection.CreateTable<FruitItems>();
             _dbConnection.CreateTable<ShoppingCart>();
+
+            SeedDatabase();
         }
 
         public void SeedDatabase()
@@ -354,29 +356,29 @@ namespace Assignment8.Services
             //}
         }
 
-        /*public List<User> GetAllUsers()
+        public List<User> GetAllUsers()
         {
             return _dbConnection.Table<User>().ToList();
-        }*/
+        }
 
         //public List<FruitItems> GetAllFruitItems()
         //{
         //    var fruits = _dbConnection.Table<FruitItems>().ToList();
         //    return fruits;
         //}
-        
+
         //public List<VegItems> GetAllVegItems()
         //{
         //    var veg = _dbConnection.Table<VegItems>().ToList();
         //    return veg;
         //}
-        
+
         //public List<ButcheryItems> GetAllButcheryItems()
         //{
         //    var butchery = _dbConnection.Table<ButcheryItems>().ToList();
         //    return butchery;
         //}
-        
+
         //public List<BakeryItems> GetAllBakeryItems()
         //{
         //    var bakery = _dbConnection.Table<BakeryItems>().ToList();

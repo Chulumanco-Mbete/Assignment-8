@@ -56,60 +56,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\Fruits\banana.png" />
-	  <None Remove="Resources\Images\Fruits\blackberry.png" />
-	  <None Remove="Resources\Images\Fruits\blueberry.png" />
-	  <None Remove="Resources\Images\Fruits\dessert_peach.png" />
-	  <None Remove="Resources\Images\Fruits\green_apples.png" />
-	  <None Remove="Resources\Images\Fruits\melon.png" />
-	  <None Remove="Resources\Images\Fruits\peach.png" />
-	  <None Remove="Resources\Images\Fruits\raspberry.png" />
-	  <None Remove="Resources\Images\Fruits\red_apples.png" />
-	  <None Remove="Resources\Images\Fruits\strawberry.png" />
-	  <None Remove="Resources\Images\Fruits\watermelon.png" />
-	  <None Remove="Resources\Images\Fruits\yellow_apples.png" />
 	  <None Remove="Resources\Images\homebtn.png" />
 	  <None Remove="Resources\Images\profile.png" />
 	  <None Remove="Resources\Images\search.png" />
 	  <None Remove="Resources\Images\shopping_cart.png" />
 	  <None Remove="Resources\Images\user_account.png" />
-	  <None Remove="Resources\Images\Vegetables\broccoli.png" />
-	  <None Remove="Resources\Images\Vegetables\cabbage.png" />
-	  <None Remove="Resources\Images\Vegetables\carrots.png" />
-	  <None Remove="Resources\Images\Vegetables\cauliflower.png" />
-	  <None Remove="Resources\Images\Vegetables\cucumber.png" />
-	  <None Remove="Resources\Images\Vegetables\lettuce.png" />
-	  <None Remove="Resources\Images\Vegetables\onion.png" />
-	  <None Remove="Resources\Images\Vegetables\potatoe.png" />
-	  <None Remove="Resources\Images\Vegetables\red_onion.png" />
-	  <None Remove="Resources\Images\Vegetables\spinach.png" />
-	  <None Remove="Resources\Images\Vegetables\tomatoe.png" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiImage Include="Resources\Images\Fruits\banana.png" />
-	  <MauiImage Include="Resources\Images\Fruits\blackberry.png" />
-	  <MauiImage Include="Resources\Images\Fruits\blueberry.png" />
-	  <MauiImage Include="Resources\Images\Fruits\dessert_peach.png" />
-	  <MauiImage Include="Resources\Images\Fruits\green_apples.png" />
-	  <MauiImage Include="Resources\Images\Fruits\melon.png" />
-	  <MauiImage Include="Resources\Images\Fruits\peach.png" />
-	  <MauiImage Include="Resources\Images\Fruits\raspberry.png" />
-	  <MauiImage Include="Resources\Images\Fruits\red_apples.png" />
-	  <MauiImage Include="Resources\Images\Fruits\strawberry.png" />
-	  <MauiImage Include="Resources\Images\Fruits\watermelon.png" />
-	  <MauiImage Include="Resources\Images\Fruits\yellow_apples.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\broccoli.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\cabbage.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\carrots.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\cauliflower.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\cucumber.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\lettuce.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\onion.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\potatoe.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\red_onion.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\spinach.png" />
-	  <MauiImage Include="Resources\Images\Vegetables\tomatoe.png" />
 	</ItemGroup>
 
 	<ItemGroup>

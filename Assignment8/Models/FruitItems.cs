@@ -5,20 +5,14 @@ namespace Assignment8.Models
 {
     public class FruitItems
     {
-        [PrimaryKey, AutoIncrement] public int FruitId { get; set; }
+        public string FruitName { get; set; }
+
+        public string FruitImage { get; set; }
+
+        public string FruitDescription { get; set; }
         
-        public string Name { get; set; }
-
-        public string Image { get; set; }
-
-        public string Description { get; set; }
+        public double FruitPrice { get; set;}
         
-        public double Price { get; set;}
-        
-        public int Quantity { get; set; }
-
-        //[ForeignKey(typeof(User))] public int UserId { get; set; }
-
-        //[ManyToOne] public User User { get; set; }
+        public int FruitQuantity { get; set; }
     }
 }

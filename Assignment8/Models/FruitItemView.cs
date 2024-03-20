@@ -20,102 +20,102 @@ namespace Assignment8.Models
             {
                 new FruitItems
                 {
-                    Name = "Green Apples",
-                    Image = "green_apples.png",
-                    Description = "",
-                    Price = 18.99,
-                    Quantity = 50
+                    FruitName = "Green Apples",
+                    FruitImage = "green_apples.png",
+                    FruitDescription = "",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
                 },
 
                 new FruitItems
                 {
-                    Name = "Yellow Apples",
-                    Image = "yellow_apples.png",
-                    Description = "",
-                    Price = 18.99,
-                    Quantity = 50
+                    FruitName = "Yellow Apples",
+                    FruitImage = "yellow_apples.png",
+                    FruitDescription = "",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
                 },
 
                 new FruitItems
                 {
-                   Name = "Red Apples",
-                    Image = "red_apples.png",
-                    Description = "",
-                    Price = 18.99,
-                    Quantity = 50
+                    FruitName = "Red Apples",
+                    FruitImage = "red_apples.png",
+                    FruitDescription = "",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
                 },
 
                 new FruitItems
                 {
-                    Name = "Blueberries",
-                    Image = "blueberry.png",
-                    Description = "",
-                    Price = 21.99,
-                    Quantity = 50
+                    FruitName = "Blueberries",
+                    FruitImage = "blueberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 21.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Raspberries",
-                    Image = "raspberry.png",
-                    Description = "",
-                    Price = 22.99,
-                    Quantity = 50
+                    FruitName = "Raspberries",
+                    FruitImage = "raspberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 22.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Blackberries",
-                    Image = "blackberry.png",
-                    Description = "",
-                    Price = 25.99,
-                    Quantity = 50
+                    FruitName = "Blackberries",
+                    FruitImage = "blackberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 25.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Watermelon",
-                    Image = "watermelon.png",
-                    Description = "",
-                    Price = 99.99,
-                    Quantity = 50
+                    FruitName = "Watermelon",
+                    FruitImage = "watermelon.png",
+                    FruitDescription = "",
+                    FruitPrice = 99.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Sweet Melon",
-                    Image = "melon.png",
-                    Description = "",
-                    Price = 59.99,
-                    Quantity = 50
+                    FruitName = "Sweet Melon",
+                    FruitImage = "melon.png",
+                    FruitDescription = "",
+                    FruitPrice = 59.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Dessert Peaches",
-                    Image = "dessert_peach.png",
-                    Description = "",
-                    Price = 39.99,
-                    Quantity = 50
+                    FruitName = "Dessert Peaches",
+                    FruitImage = "dessert_peach.png",
+                    FruitDescription = "",
+                    FruitPrice = 39.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Yellow Peaches",
-                    Image = "peach.png",
-                    Description = "",
-                    Price = 49.99,
-                    Quantity = 50
+                    FruitName = "Yellow Peaches",
+                    FruitImage = "peach.png",
+                    FruitDescription = "",
+                    FruitPrice = 49.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Strawberries",
-                    Image = "strawberry.png",
-                    Description = "",
-                    Price = 45.99,
-                    Quantity = 50
+                    FruitName = "Strawberries",
+                    FruitImage = "strawberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 45.99,
+                    FruitQuantity = 50
                 },
                 new FruitItems
                 {
-                    Name = "Bananas",
-                    Image = "banana.png",
-                    Description = "",
-                    Price = 49.99,
-                    Quantity = 50
+                    FruitName = "Bananas",
+                    FruitImage = "banana.png",
+                    FruitDescription = "",
+                    FruitPrice = 49.99,
+                    FruitQuantity = 50
                 },
             };
 

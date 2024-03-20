@@ -1,18 +1,12 @@
 using Assignment8.Models;
-
 namespace Assignment8;
+using System;
 
 public partial class BakeryDetails : ContentPage
 {
-    private BakeryItemView bakeryItemView;
-
-    public BakeryDetails()
-	{
-		InitializeComponent();
-	}
-
-    public BakeryDetails(BakeryItemView bakeryItemView)
+    public BakeryDetails(BakeryItemView Item)
     {
-        this.bakeryItemView = bakeryItemView;
+        InitializeComponent();
+        BindingContext = Item;
     }
 }
