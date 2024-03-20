@@ -5,14 +5,12 @@ using Assignment8.Services;
 
 public partial class FruitPage : ContentPage
 {
-    private LocalDatabase _database;
     private FruitItems _currentFruit;
 
     public FruitItems CurrentFruit
     {
         get { return _currentFruit; }
-        set
-        {
+        set {
             _currentFruit = value;
 
             OnPropertyChanged();
@@ -22,11 +20,11 @@ public partial class FruitPage : ContentPage
     public FruitPage()
 	{
         InitializeComponent();
-
-        _database = new LocalDatabase();
-
-        BindingContext = this;
+        this.BindingContext = new FruitItemView(this.Navigation);
     }
 
-    //public List<>
+    void ListView_ItemSelected(System.Object sender, Microsoft.Maui.Controls.SelectedItemChangedEventArgs e)
+    {
+        Console.WriteLine("I got clicked");
+    }
 }

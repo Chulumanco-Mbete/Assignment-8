@@ -8,13 +8,17 @@ namespace Assignment8.Models
         [PrimaryKey, AutoIncrement] public int VegId { get; set; }
         
         public string Name { get; set; }
-        
+
+        public string Image { get; set; }
+
+        public string Description { get; set; }
+
         public double Price { get; set;}
         
         public int Quantity { get; set; }
 
-        [ForeignKey(typeof(User))] public int UserId { get; set; }
+        //[ForeignKey(typeof(User))] public int UserId { get; set; }
 
-        [ManyToOne] public User User { get; set; }
+        //[ManyToOne] public User User { get; set; }
     }
 }
