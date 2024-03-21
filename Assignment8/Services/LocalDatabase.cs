@@ -21,10 +21,10 @@ namespace Assignment8.Services
             _dbConnection = new SQLiteConnection(GetDatabasePath());
 
             _dbConnection.CreateTable<User>();
-            //_dbConnection.CreateTable<BakeryItems>();
-            //_dbConnection.CreateTable<ButcheryItems>();
-            //_dbConnection.CreateTable<VegItems>();
-            //_dbConnection.CreateTable<FruitItems>();
+            _dbConnection.CreateTable<BakeryItems>();
+            _dbConnection.CreateTable<ButcheryItems>();
+            _dbConnection.CreateTable<VegItems>();
+            _dbConnection.CreateTable<FruitItems>();
             _dbConnection.CreateTable<ShoppingCart>();
 
             SeedDatabase();
@@ -44,316 +44,306 @@ namespace Assignment8.Services
                 _dbConnection.Insert(user);
             }
 
-            //if (_dbConnection.Table<FruitItems>().Count() == 0)
-            //{
-            //    FruitItems fruit = new FruitItems()
-            //    {
-            //        Name = "Green Apples",
-            //        Image = "green_apples.png",
-            //        Description = "",
-            //        Price = 18.99,
-            //        Quantity = 50
-            //    };
+            if (_dbConnection.Table<FruitItems>().Count() == 0)
+            {
+                List<FruitItems> fruitItems = new List<FruitItems>()
+                {
+                    new FruitItems()
+                {
+                    FruitName = "Green Apples",
+                    FruitImage = "green_apples.png",
+                    FruitDescription = "1kg of Green Apples",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Yellow Apples",
-            //        Image = "yellow_apples.png",
-            //        Description = "",
-            //        Price = 18.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Yellow Apples",
+                    FruitImage = "yellow_apples.png",
+                    FruitDescription = "1kg of Yellow Apples",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Red Apples",
-            //        Image = "red_apples.png",
-            //        Description = "",
-            //        Price = 18.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Red Apples",
+                    FruitImage = "red_apples.png",
+                    FruitDescription = "1kg of Red Apples",
+                    FruitPrice = 18.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Blueberries",
-            //        Image = "blueberry.png",
-            //        Description = "",
-            //        Price = 21.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Blueberries",
+                    FruitImage = "blueberry.png",
+                    FruitDescription = "300g of Blueberries",
+                    FruitPrice = 21.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
+                new FruitItems()
+                {
+                    FruitName = "Raspberries",
+                    FruitImage = "raspberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 22.99,
+                    FruitQuantity = 50
+                },
 
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Raspberries",
-            //        Image = "raspberry.png",
-            //        Description = "",
-            //        Price = 22.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Blackberries",
+                    FruitImage = "blackberry.png",
+                    FruitDescription = "",
+                    FruitPrice = 25.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
+                new FruitItems()
+                {
+                    FruitName = "Watermelon",
+                    FruitImage = "watermelon.png",
+                    FruitDescription = "1 Full Watermelon",
+                    FruitPrice = 99.99,
+                    FruitQuantity = 50
+                },
 
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Blackberries",
-            //        Image = "blackberry.png",
-            //        Description = "",
-            //        Price = 25.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Sweet Melon",
+                    FruitImage = "melon.png",
+                    FruitDescription = "1 Full Sweet Melon",
+                    FruitPrice = 59.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Watermelon",
-            //        Image = "watermelon.png",
-            //        Description = "",
-            //        Price = 99.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Dessert Peaches",
+                    FruitImage = "dessert_peach.png",
+                    FruitDescription = "1 box of Dessert Peachs",
+                    FruitPrice = 39.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Sweet Melon",
-            //        Image = "melon.png",
-            //        Description = "",
-            //        Price = 59.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Yellow Peaches",
+                    FruitImage = "peach.png",
+                    FruitDescription = "1 box of Yellow Peaches",
+                    FruitPrice = 49.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Dessert Peaches",
-            //        Image = "dessert_peach.png",
-            //        Description = "",
-            //        Price = 39.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Strawberries",
+                    FruitImage = "strawberry.png",
+                    FruitDescription = "500g of Strawberries",
+                    FruitPrice = 45.99,
+                    FruitQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Yellow Peaches",
-            //        Image = "peach.png",
-            //        Description = "",
-            //        Price = 49.99,
-            //        Quantity = 50
-            //    };
+                new FruitItems()
+                {
+                    FruitName = "Bananas",
+                    FruitImage = "banana.png",
+                    FruitDescription = "1 box of Bananas",
+                    FruitPrice = 49.99,
+                    FruitQuantity = 50
+                }
+                };
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Strawberries",
-            //        Image = "strawberry.png",
-            //        Description = "",
-            //        Price = 45.99,
-            //        Quantity = 50
-            //    };
+                _dbConnection.InsertAll(fruitItems);
+            }
 
-            //    _dbConnection.Insert(fruit);
-                
-            //    fruit = new FruitItems()
-            //    {
-            //        Name = "Bananas",
-            //        Image = "banana.png",
-            //        Description = "",
-            //        Price = 49.99,
-            //        Quantity = 50
-            //    };
+            if (_dbConnection.Table<VegItems>().Count() == 0)
+            {
+                List<VegItems> vegItems = new List<VegItems>()
+                {
+                    new VegItems
+                {
+                    VegName = "Tomatoes",
+                    VegImage = "tomatoe.png",
+                    VegDescription = "1kg of Tomatoes",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
+                },
 
-            //    _dbConnection.Insert(fruit);
-            //}
-            
-            //if (_dbConnection.Table<VegItems>().Count() == 0)
-            //{
-            //    VegItems veg= new VegItems()
-            //    {
-            //        Name = "Tomatoes",
-            //        Price = 34.99,
-            //        Quantity = 50
-            //    };
+                new VegItems
+                {
+                    VegName = "Potatoes",
+                    VegImage = "potatoe.png",
+                    VegDescription = "1kg of Potatoes",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Potatoes",
-            //        Price = 34.99,
-            //        Quantity = 50
-            //    };
+                new VegItems
+                {
+                    VegName = "Broccoli",
+                    VegImage = "broccoli.png",
+                    VegDescription = "Only broccoli pack",
+                    VegPrice = 29.99,
+                    VegQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Broccoli",
-            //        Price = 29.99,
-            //        Quantity = 50
-            //    };
+                new VegItems
+                {
+                    VegName = "Cauliflower",
+                    VegImage = "cauliflower.png",
+                    VegDescription = "Only cauliflower pack",
+                    VegPrice = 29.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Cabbage",
+                    VegImage = "cabbage.png",
+                    VegDescription = "1 Full Cabbage",
+                    VegPrice = 28.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Carrots",
+                    VegImage = "carrots.png",
+                    VegDescription = "1kg of Carrotss",
+                    VegPrice = 23.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Cucumber",
+                    VegImage = "cucumber.png",
+                    VegDescription = "1 Full English Cucumber",
+                    VegPrice = 14.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Lettuce",
+                    VegImage = "lettuce.png",
+                    VegDescription = "500g pack of lettuce",
+                    VegPrice = 24.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Onion",
+                    VegImage = "onion.png",
+                    VegDescription = "1kg of Onions",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Red Onion",
+                    VegImage = "red_onion.png",
+                    VegDescription = "1kg of Red Onions",
+                    VegPrice = 34.99,
+                    VegQuantity = 50
+                },
+                new VegItems
+                {
+                    VegName = "Spinach",
+                    VegImage = "spinach.png",
+                    VegDescription = "750g pack of ready to cook spinach",
+                    VegPrice = 39.99,
+                    VegQuantity = 50
+                }
+            };
+                _dbConnection.InsertAll(vegItems);
+            }
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Cauliflower",
-            //        Price = 29.99,
-            //        Quantity = 50
-            //    };
+            if (_dbConnection.Table<ButcheryItems>().Count() == 0)
+            {
+                List<ButcheryItems> meatItems = new List<ButcheryItems>()
+                {
+                    new ButcheryItems
+                {
+                    MeatName = "Lamb",
+                    MeatImage = "lamb.png",
+                    MeatDescription = "",
+                    MeatPrice = 119.99,
+                    MeatQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
+                new ButcheryItems
+                {
+                    MeatName = "Pork",
+                    MeatImage = "pork.png",
+                    MeatDescription = "",
+                    MeatPrice = 89.99,
+                    MeatQuantity = 50
+                },
 
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Cabbage",
-            //        Price = 28.99,
-            //        Quantity = 50
-            //    };
+                new ButcheryItems
+                {
+                    MeatName = "Chicken",
+                    MeatImage = "chicken.png",
+                    MeatDescription = "",
+                    MeatPrice = 59.99,
+                    MeatQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
+                new ButcheryItems
+                {
+                    MeatName = "Sausage",
+                    MeatImage = "sausage.png",
+                    MeatDescription = "",
+                    MeatPrice = 49.99,
+                    MeatQuantity = 50
+                }
+                };
+                    _dbConnection.InsertAll(meatItems);
+            }
 
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Carrots",
-            //        Price = 23.99,
-            //        Quantity = 50
-            //    };
+            if (_dbConnection.Table<BakeryItems>().Count() == 0)
+            {
+                List<BakeryItems> bakeItems = new List<BakeryItems>()
+                {
+                    new BakeryItems
+                {
+                    BakeName = "White Bread",
+                    BakeImage = "white_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 15.99,
+                    BakeQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Cucumber",
-            //        Price = 14.99,
-            //        Quantity = 50
-            //    };
+                new BakeryItems
+                {
+                    BakeName = "Brown Bread",
+                    BakeImage = "brown_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 17.99,
+                    BakeQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Lettuce",
-            //        Price = 24.99,
-            //        Quantity = 50
-            //    };
+                new BakeryItems
+                {
+                    BakeName = "Paninis",
+                    BakeImage = "panini.png",
+                    BakeDescription = "",
+                    BakePrice = 12.99,
+                    BakeQuantity = 50
+                },
 
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Onion",
-            //        Price = 34.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Red Onion",
-            //        Price = 34.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(veg);
-                
-            //    veg = new VegItems()
-            //    {
-            //        Name = "Spinach",
-            //        Price = 39.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(veg);
-            //}
-
-            //if (_dbConnection.Table<ButcheryItems>().Count() == 0)
-            //{
-            //    ButcheryItems butchery = new ButcheryItems()
-            //    {
-            //        Name = "Lamb",
-            //        Price = 119.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(butchery);
-
-            //    butchery = new ButcheryItems()
-            //    {
-            //        Name = "Pork",
-            //        Price = 89.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(butchery);
-
-            //    butchery = new ButcheryItems()
-            //    {
-            //        Name = "Chicken",
-            //        Price = 59.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(butchery);
-
-            //    butchery = new ButcheryItems()
-            //    {
-            //        Name = "Sausage",
-            //        Price = 49.99,
-            //        Quantity = 50
-            //    };
-            //}
-            
-            //if (_dbConnection.Table<BakeryItems>().Count() == 0)
-            //{
-            //    BakeryItems bakery = new BakeryItems()
-            //    {
-            //        Name = "White Bread",
-            //        Price = 15.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(bakery);
-
-            //    bakery = new BakeryItems()
-            //    {
-            //        Name = "Brown Bread",
-            //        Price = 17.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(bakery);
-
-            //    bakery = new BakeryItems()
-            //    {
-            //        Name = "Paninis",
-            //        Price = 12.99,
-            //        Quantity = 50
-            //    };
-
-            //    _dbConnection.Insert(bakery);
-
-            //    bakery = new BakeryItems()
-            //    {
-            //        Name = "Garlic Bread",
-            //        Price = 13.99,
-            //        Quantity = 50
-            //    };
-            //}
+                new BakeryItems
+                {
+                    BakeName = "Garlic Bread",
+                    BakeImage = "garlic_bread.png",
+                    BakeDescription = "",
+                    BakePrice = 13.99,
+                    BakeQuantity = 50
+                }
+                };
+                _dbConnection.InsertAll(bakeItems);
+            }
         }
 
         public List<User> GetAllUsers()
@@ -361,29 +351,30 @@ namespace Assignment8.Services
             return _dbConnection.Table<User>().ToList();
         }
 
-        //public List<FruitItems> GetAllFruitItems()
-        //{
-        //    var fruits = _dbConnection.Table<FruitItems>().ToList();
-        //    return fruits;
-        //}
+        public List<FruitItems> GetAllFruitItems()
+        {
+            return _dbConnection.Table<FruitItems>().ToList();
+        }
 
-        //public List<VegItems> GetAllVegItems()
-        //{
-        //    var veg = _dbConnection.Table<VegItems>().ToList();
-        //    return veg;
-        //}
+        public List<VegItems> GetAllVegItems()
+        {
+            return _dbConnection.Table<VegItems>().ToList();
+        }
 
-        //public List<ButcheryItems> GetAllButcheryItems()
-        //{
-        //    var butchery = _dbConnection.Table<ButcheryItems>().ToList();
-        //    return butchery;
-        //}
+        public List<ButcheryItems> GetAllButcheryItems()
+        {
+            return _dbConnection.Table<ButcheryItems>().ToList();
+        }
 
-        //public List<BakeryItems> GetAllBakeryItems()
-        //{
-        //    var bakery = _dbConnection.Table<BakeryItems>().ToList();
-        //    return bakery;
-        //}
+        public List<BakeryItems> GetAllBakeryItems()
+        {
+            return _dbConnection.Table<BakeryItems>().ToList();
+        }
+
+        public List<ShoppingCart> GetCartItems()
+        {
+            return _dbConnection.Table<ShoppingCart>().ToList();
+        }
 
         public void UpdateUser(User user)
         {
@@ -398,6 +389,24 @@ namespace Assignment8.Services
                 _dbConnection.GetChildren(user, true);
 
             return user;
+        }
+
+        public FruitItems GetItemById(int id)
+        {
+            FruitItems fruitItems = _dbConnection.Table<FruitItems>().Where(x => x.FruitId == id).FirstOrDefault();
+
+            if (fruitItems != null)
+                _dbConnection.GetChildren(fruitItems, true);
+
+            return fruitItems;
+        }
+        public void AddToDataBase(ShoppingCart cartItem) //Add Item from from db to cart
+        {
+            _dbConnection.Insert(cartItem);
+        }
+        public void DeleteFromDataBase(ShoppingCart cartItem) //Remove Item from from cart to db
+        {
+            _dbConnection.Delete(cartItem);
         }
     }
 }

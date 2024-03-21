@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Assignment8.CartPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to Shopping Cart."
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="Assignment8.CartPage"
+             xmlns:Models="clr-namespace:Assignment8.Models">
+    
+    <StackLayout>
+        <ListView x:Name="CartListView" ItemsSource="{Binding BasketItems}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="Models:ShoppingCart">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding FruitImage}" HeightRequest="200" WidthRequest="200"/>
+                            <Label Text="{Binding FruitName}" VerticalOptions="Center"/>
+                            <Label Text="{Binding CartPrice, StringFormat='Price: {0:C}'}" VerticalOptions="Center"/>
+                            <Label Text="Quantity: " VerticalOptions="Center"/>
+                            <Entry Text="{Binding ItemQuantity}" Keyboard="Numeric"/>
+                            <Button Text="Remove" Clicked="OnRemoveClicked"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Label Text="{Binding TotalPrice, StringFormat='Total Price: {0:C}'}"/>
+    </StackLayout>
 </ContentPage>

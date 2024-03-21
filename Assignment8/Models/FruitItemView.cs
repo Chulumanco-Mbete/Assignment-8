@@ -18,42 +18,43 @@ namespace Assignment8.Models
         {
             FruitItems = new ObservableCollection<FruitItems>
             {
-                new FruitItems
+                new FruitItems()
                 {
                     FruitName = "Green Apples",
                     FruitImage = "green_apples.png",
-                    FruitDescription = "",
+                    FruitDescription = "1kg of Green Apples",
                     FruitPrice = 18.99,
                     FruitQuantity = 50
                 },
 
-                new FruitItems
+                new FruitItems()
                 {
                     FruitName = "Yellow Apples",
                     FruitImage = "yellow_apples.png",
-                    FruitDescription = "",
+                    FruitDescription = "1kg of Yellow Apples",
                     FruitPrice = 18.99,
                     FruitQuantity = 50
                 },
 
-                new FruitItems
+                new FruitItems()
                 {
                     FruitName = "Red Apples",
                     FruitImage = "red_apples.png",
-                    FruitDescription = "",
+                    FruitDescription = "1kg of Red Apples",
                     FruitPrice = 18.99,
                     FruitQuantity = 50
                 },
 
-                new FruitItems
+                new FruitItems()
                 {
                     FruitName = "Blueberries",
                     FruitImage = "blueberry.png",
-                    FruitDescription = "",
+                    FruitDescription = "300g of Blueberries",
                     FruitPrice = 21.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Raspberries",
                     FruitImage = "raspberry.png",
@@ -61,7 +62,8 @@ namespace Assignment8.Models
                     FruitPrice = 22.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Blackberries",
                     FruitImage = "blackberry.png",
@@ -69,51 +71,57 @@ namespace Assignment8.Models
                     FruitPrice = 25.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Watermelon",
                     FruitImage = "watermelon.png",
-                    FruitDescription = "",
+                    FruitDescription = "1 Full Watermelon",
                     FruitPrice = 99.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Sweet Melon",
                     FruitImage = "melon.png",
-                    FruitDescription = "",
+                    FruitDescription = "1 Full Sweet Melon",
                     FruitPrice = 59.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Dessert Peaches",
                     FruitImage = "dessert_peach.png",
-                    FruitDescription = "",
+                    FruitDescription = "1 box of Dessert Peachs",
                     FruitPrice = 39.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Yellow Peaches",
                     FruitImage = "peach.png",
-                    FruitDescription = "",
+                    FruitDescription = "1 box of Yellow Peaches",
                     FruitPrice = 49.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Strawberries",
                     FruitImage = "strawberry.png",
-                    FruitDescription = "",
+                    FruitDescription = "500g of Strawberries",
                     FruitPrice = 45.99,
                     FruitQuantity = 50
                 },
-                new FruitItems
+
+                new FruitItems()
                 {
                     FruitName = "Bananas",
                     FruitImage = "banana.png",
-                    FruitDescription = "",
+                    FruitDescription = "1 box of Bananas",
                     FruitPrice = 49.99,
                     FruitQuantity = 50
                 },

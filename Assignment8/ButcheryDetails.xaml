@@ -20,7 +20,7 @@
                     <BoxView CornerRadius="0,0,0,0" Color="White" HeightRequest="300"/>
                     <Grid RowDefinitions="Auto,Auto,Auto,Auto" Padding="20,45,20,0" >
                         <Label Grid.Row="1"  FontSize="30" FontAttributes="Bold" Text="{Binding MeatName}"/>
-                        <Label Grid.Row="2" Text="{Binding MeatPrice}" FontSize="25" Padding="0,15" TextColor="#2C363C" FontAttributes="Bold"/>
+                        <Label Grid.Row="2" Text="{Binding MeatPrice,StringFormat='{0:C}'}" FontSize="25" Padding="0,15" TextColor="#2C363C" FontAttributes="Bold"/>
                         <Label Grid.Row="3" Text="{Binding MeatDescription}" FontSize="20" TextColor="Black"/>
                     </Grid>
                 </Grid>

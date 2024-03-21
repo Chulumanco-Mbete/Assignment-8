@@ -22,7 +22,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Tomatoes",
                     VegImage = "tomatoe.png",
-                    VegDescription = "",
+                    VegDescription = "1kg of Tomatoes",
                     VegPrice = 34.99,
                     VegQuantity = 50
                 },
@@ -31,7 +31,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Potatoes",
                     VegImage = "potatoe.png",
-                    VegDescription = "",
+                    VegDescription = "1kg of Potatoes",
                     VegPrice = 34.99,
                     VegQuantity = 50
                 },
@@ -40,7 +40,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Broccoli",
                     VegImage = "broccoli.png",
-                    VegDescription = "",
+                    VegDescription = "Only broccoli pack",
                     VegPrice = 29.99,
                     VegQuantity = 50
                 },
@@ -49,7 +49,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Cauliflower",
                     VegImage = "cauliflower.png",
-                    VegDescription = "",
+                    VegDescription = "Only cauliflower pack",
                     VegPrice = 29.99,
                     VegQuantity = 50
                 },
@@ -57,7 +57,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Cabbage",
                     VegImage = "cabbage.png",
-                    VegDescription = "",
+                    VegDescription = "1 Full Cabbage",
                     VegPrice = 28.99,
                     VegQuantity = 50
                 },
@@ -65,7 +65,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Carrots",
                     VegImage = "carrots.png",
-                    VegDescription = "",
+                    VegDescription = "1kg of Carrotss",
                     VegPrice = 23.99,
                     VegQuantity = 50
                 },
@@ -73,7 +73,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Cucumber",
                     VegImage = "cucumber.png",
-                    VegDescription = "",
+                    VegDescription = "1 Full English Cucumber",
                     VegPrice = 14.99,
                     VegQuantity = 50
                 },
@@ -81,7 +81,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Lettuce",
                     VegImage = "lettuce.png",
-                    VegDescription = "",
+                    VegDescription = "500g pack of lettuce",
                     VegPrice = 24.99,
                     VegQuantity = 50
                 },
@@ -89,7 +89,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Onion",
                     VegImage = "onion.png",
-                    VegDescription = "",
+                    VegDescription = "1kg of Onions",
                     VegPrice = 34.99,
                     VegQuantity = 50
                 },
@@ -97,7 +97,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Red Onion",
                     VegImage = "red_onion.png",
-                    VegDescription = "",
+                    VegDescription = "1kg of Red Onions",
                     VegPrice = 34.99,
                     VegQuantity = 50
                 },
@@ -105,7 +105,7 @@ namespace Assignment8.Models
                 {
                     VegName = "Spinach",
                     VegImage = "spinach.png",
-                    VegDescription = "",
+                    VegDescription = "750g pack of ready to cook spinach",
                     VegPrice = 39.99,
                     VegQuantity = 50
                 },

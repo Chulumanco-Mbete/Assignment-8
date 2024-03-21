@@ -13,33 +13,17 @@
 
         <Image Source="profile.png" Aspect="AspectFit" HeightRequest="100" WidthRequest="100"/>
 
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Label Text="First Name" FontAttributes="Bold"/>
-            <Label Grid.Row="1" Text="Surname" FontAttributes="Bold"/>
-            <Label Grid.Row="2" Text="Email" FontAttributes="Bold"/>
-            <Label Grid.Row="3" Text="Bio" FontAttributes="Bold"/>
-
-            <Entry Grid.Column="1"  Text="{Binding CurrentUser.Name }"/>
-            <Entry Grid.Row="1" Grid.Column="1" Text="{Binding CurrentUser.Surname }"/>
-            <Entry Grid.Row="2" Grid.Column="1" Text="{Binding CurrentUser.Email }"/>
-            <Entry Grid.Row="3" Grid.Column="1" Text="{Binding CurrentUser.Bio }"/>
-
-        </Grid>
-
-        <Button Text="Reload Data" BackgroundColor="Black" SemanticProperties.Hint="Counts the number of times you click" Clicked="ReloadButton_Clicked" HorizontalOptions="Fill" />
-
-        <Button Text="Save" BackgroundColor="Black" Clicked="SaveButton_Clicked" />
+        <Button
+            x:Name="ProfileBtn"
+            Text="Account Details"
+            HorizontalOptions="CenterAndExpand"
+            Clicked="ProfileBtn_Clicked"
+            HeightRequest="50"
+            WidthRequest="200"
+            BorderColor="Black"
+            BorderWidth="5"
+            TextColor="Black"
+            BackgroundColor="LightSteelBlue"
+            Margin="10"/>
     </VerticalStackLayout>
 </ContentPage>

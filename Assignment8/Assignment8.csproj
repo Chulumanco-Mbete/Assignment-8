@@ -86,6 +86,9 @@
 	  <Compile Update="FruitPage.xaml.cs">
 	    <DependentUpon>FruitPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="SignUp.xaml.cs">
+	    <DependentUpon>SignUp.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="ProfilePage.xaml.cs">
 	    <DependentUpon>ProfilePage.xaml</DependentUpon>
 	  </Compile>
@@ -117,6 +120,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="FruitPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SignUp.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="SearchPage.xaml">
